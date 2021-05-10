@@ -1,0 +1,44 @@
+body {}
+
+#main-content {
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+#secondary-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-style: solid;
+}
+.double-card {
+    
+}
+@media(max-width: 375px) {
+    #secondary-content {
+        flex-direction: column;
+    }
+
+}
+
+
+/* 
+.left-card {
+    align-self: flex-start;
+}
+
+.up-card {
+
+    align-self: center;
+}
+
+.right-card {
+    align-self: flex-end;
+} */
+
+.down-card {}
