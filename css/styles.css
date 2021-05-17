@@ -9,7 +9,6 @@ body {
 }
 
 #main-content {
-    padding-bottom: 40px;
     text-align: center;
     width: 100%;
     display: flex;
@@ -19,15 +18,15 @@ body {
 
 .first-title {
     font-size: 30px;
-    color:hsl(234, 12%, 34%);
+    color: hsl(234, 12%, 34%);
     font-weight: lighter;
 }
 
 .second-title {
     font-weight: bold;
     font-size: 30px;
-    padding-bottom: 15px;
-    color:hsl(234, 12%, 34%)
+    padding-bottom: 10px;
+    color: hsl(234, 12%, 34%)
 }
 
 .main-text {
@@ -40,57 +39,57 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     text-align: left;
+    margin-top: 4%;
+    align-content: space-around;
 }
 
 .card {
+    height: 250px;
+    width: 340px;
+    padding: 3%;
+    margin: 2%;
     border-style: hidden;
-    padding: 2%;
-    margin: auto;
-    height: 100x;
+    height: 180px;
     width: 300px;
     border-radius: 4px;
     box-shadow: 0 4px 10px #a3a5ae;
+    position: relative;
 }
 
 .card-name {
     margin-bottom: 15px;
     font-weight: bold;
     /* margin-top: 15px; */
-    color:hsl(234, 12%, 34%)
+    color: hsl(234, 12%, 34%)
 }
 
 .card-text {
     color: hsl(229, 6%, 66%)
 }
 
-.double-card {
-    margin: auto;
-    margin-left: -25px;
-    margin-right: 20px;
-    width: 270px;
-    
-}
 
-@media(max-width: 375px) {
+
+/* @media(max-width: 375px) {
     #secondary-content {
         flex-direction: column;
     }
-}
+} */
 
 .left-card {
     border-top: 4px solid #45d3d3;
 }
 
 .up-card {
-    margin-bottom: 30px;
+
     border-top: 4px solid #ea5353;
 }
 
 .right-card {
     border-top: 4px solid #549ef2;
+
 }
 
 .down-card {
@@ -98,6 +97,30 @@ body {
 }
 
 #secondary-content svg {
-    margin-left: 200px;
-    margin-top: 50px;
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+@media (min-width: 1150px) {
+    .card {
+        margin: auto;
+    }
+
+    .down-card {
+        order: 3;
+    }
+
+    .right-card {
+        order: 2;
+    }
+
+    .card-pushed-down {
+        transform: translateY(50%);
+    }
+
+    .up-card {
+        margin-bottom: 30px;
+     
+    }
+    
 }
