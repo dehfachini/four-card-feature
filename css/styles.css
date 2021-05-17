@@ -19,17 +19,21 @@ body {
 
 .first-title {
     font-size: 30px;
+    color:hsl(234, 12%, 34%);
+    font-weight: lighter;
 }
 
 .second-title {
     font-weight: bold;
     font-size: 30px;
     padding-bottom: 15px;
+    color:hsl(234, 12%, 34%)
 }
 
 .main-text {
     width: 500px;
     margin: auto;
+    color: hsl(229, 6%, 66%)
 }
 
 #secondary-content {
@@ -55,6 +59,11 @@ body {
     margin-bottom: 15px;
     font-weight: bold;
     /* margin-top: 15px; */
+    color:hsl(234, 12%, 34%)
+}
+
+.card-text {
+    color: hsl(229, 6%, 66%)
 }
 
 .double-card {
